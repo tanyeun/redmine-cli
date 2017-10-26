@@ -10,7 +10,7 @@ module Redmine
 
       def config
         begin
-          generic_conf '.redmine'
+          generic_conf '.redmine-rb'
         rescue Errno::ENOENT
           raise NoConfigFileError
           exit 1
@@ -19,7 +19,7 @@ module Redmine
 
       def cache
         begin
-          generic_conf '.redmine_cache'
+          generic_conf '.redmine_cache-rb'
         rescue Errno::ENOENT
           @cache = Thor::CoreExt::HashWithIndifferentAccess.new
         end

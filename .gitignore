@@ -1,5 +1,7 @@
 pkg/*
 *.gem
+*.swp
+*.swo
 .bundle
 .rvmrc
 /tmp/aruba/*

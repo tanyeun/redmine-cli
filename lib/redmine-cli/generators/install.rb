@@ -16,7 +16,7 @@ module Redmine::Cli::Generators
     class_option :test,  :type => :boolean
     def copy_configuration_file
       self.destination_root = File.expand_path("~") unless options.test
-      template(".redmine")
+      template(".redmine-rb")
     end
   end
 end
